@@ -6,6 +6,11 @@
 				color: red;
 		}
 		</style>
+		<style>
+		.greentext {
+				color: green;
+		}
+		</style>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -122,53 +127,104 @@
 						</table>
 				</section>
 				<section>
-	<p class="fragment fade-up highlight-current-blue">Input : Villes déjà visitées</p>
-	<p class="fragment fade-in-then-out ">Output : Ville</p>
+	<p class="fragment fade-up highlight-current-blue">Input : Visited Cities</p>
 				<table>
 							<thead>
 								<tr>
 									<th><code>City</code></th>
 									<th><code>Country</code></th>
-									<th><code>...</code></th>
+									<th><code>Visited</code></th>
 									<th><code>...</code></th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td>Los Angeles</td>
+									<td class="redtext">Los Angeles</td>
 									<td>USA</td>
-									<td>...</td>
+									<td class="redtext">yes</td>
 									<td>...</td>
 								</tr>
 								<tr>
 									<td>Las Vegas</td>
-									<td>USA<td>
-									<td>...</td>
+									<td>USA</td>
+									<td>no</td>
 									<td>...</td>
 								</tr>
 								<tr>
 									<td class="redtext">Paris</td>
 									<td class="redtext">France</td>
-									<td>...</td>
+									<td>no</td>
 									<td>...</td>
 								</tr>
 								<tr>
 									<td class="redtext">Tokyo</td>
 									<td class="redtext">Japan</td>
-									<td>...</td>
+									<td>no</td>
 									<td>...</td>
 								</tr>
 								<tr>
 									<td>New York</td>
 									<td>USA</td>
-									<td>...</td>
+									<td>no</td>
 									<td>...</td>
 								</tr>
 								<tr>
 									<td>Toronto</td>
 									<td>Canada</td>
+									<td>no</td>
 									<td>...</td>
-									<td>...</td>
+								</tr>
+							</tbody>
+						</table>
+				</section>
+				<section>
+	<p class="fragment fade-up highlight-current-blue">Input : Preferences</p>
+	<p class="fragment fade-in ">Output : Best_city == Las Vegas</p>
+				<table>
+							<thead>
+								<tr>
+									<th><code>City</code></th>
+									<th><code>Country</code></th>
+									<th><code>Visited</code></th>
+									<th><code>Party</code></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="redtext">Los Angeles</td>
+									<td>USA</td>
+									<td class="redtext">yes</td>
+									<td>40%</td>
+								</tr>
+								<tr>
+									<td>Las Vegas</td>
+									<td>USA</td>
+									<td>no</td>
+									<td class="greentext">100%</td>
+								</tr>
+								<tr>
+									<td class="redtext">Paris</td>
+									<td class="redtext">France</td>
+									<td>no</td>
+									<td>70%</td>
+								</tr>
+								<tr>
+									<td class="redtext">Tokyo</td>
+									<td class="redtext">Japan</td>
+									<td>no</td>
+									<td>30%</td>
+								</tr>
+								<tr>
+									<td>New York</td>
+									<td>USA</td>
+									<td>no</td>
+									<td class="greentext">98%</td>
+								</tr>
+								<tr>
+									<td>Toronto</td>
+									<td>Canada</td>
+									<td>no</td>
+									<td>3%</td>
 								</tr>
 							</tbody>
 						</table>
